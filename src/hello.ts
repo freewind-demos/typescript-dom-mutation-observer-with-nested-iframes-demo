@@ -4,9 +4,10 @@ function enhanceButton() {
   const button = nested2.contentDocument!.querySelector('#button')!
 
   button.addEventListener('click', () => {
-    const div = nested2.contentDocument?.createElement('div')!;
-    div.textContent = 'new created';
-    nested2.contentDocument!.body.appendChild(div);
+    button.textContent += '!';
+    // const div = nested2.contentDocument?.createElement('div')!;
+    // div.textContent = 'new created';
+    // nested2.contentDocument!.body.appendChild(div);
   })
 }
 
